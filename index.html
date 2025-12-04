@@ -1,117 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trapti Gupta's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trapti Gupta • Flutter Engineer</title>
+  <meta name="description" content="Portfolio of Trapti Gupta, Flutter Engineer. Projects, experience, skills, and contact information." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%23008BFF'/%3E%3Ctext x='50' y='60' font-size='50' text-anchor='middle' fill='white' font-family='Arial, Helvetica, sans-serif'%3ETG%3C/text%3E%3C/svg%3E">
 </head>
 <body>
-    <header>
-        <h1>Trapti Gupta</h1>
-        <p>Flutter Developer</p>
-        <nav>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="avatar" aria-hidden="true">TG</div>
+      <h1 class="name">Trapti Gupta</h1>
+      <p class="role">Flutter Engineer</p>
+      <div class="social">
+        <a href="mailto:trapti321t@gmail.com" aria-label="Email">✉️</a>
+        <a href="https://github.com/trapti321" target="_blank" rel="noopener" aria-label="GitHub">🐙</a>
+        <a href="https://www.linkedin.com/in/trapti-gupta-14281315" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+        <button id="themeToggle" class="ghost" aria-label="Toggle theme">☾</button>
+      </div>
+      <nav class="side-nav">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="location">📍 Gwalior, India</div>
+      <a class="resume" href="assets/Trapti_Gupta_Resume.pdf" download>Download Resume</a>
+    </aside>
+
+    <main class="content">
+      <section id="home" class="hero">
+        <h2>Hi, I'm <span class="accent">Trapti</span> — I build clean, performant Flutter apps.</h2>
+        <p class="subtitle">Focused on delightful UX, scalable architecture, and real‑time features.</p>
+        <div class="actions">
+          <a class="btn" href="#projects">See Projects</a>
+          <a class="btn btn-ghost" href="#contact">Hire Me</a>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <h3>About</h3>
+        <p>
+          Dedicated and passionate Mobile App Developer with extensive experience in writing clean, efficient, and elegant code. Technology enthusiast, always staying updated with the latest trends and development patterns. Skilled at quickly adopting new frameworks and languages, thriving in dynamic environments.
+        </p>
+      </section>
+
+      <section id="skills" class="section">
+        <h3>Skills</h3>
+        <div class="skills-grid">
+          <div>
+            <h4>Languages</h4>
             <ul>
-                <li><a href="#summary">Summary</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#achievements">Achievements</a></li>
-                <li><a href="#contact">Contact</a></li>
+              <li>Dart</li>
+              <li>Python</li>
             </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="summary">
-            <h2>Summary</h2>
-            <p>Trapti Gupta is a Software Engineer who loves programming and focuses on writing clean, elegant, and efficient code. He is a technology geek and follows the latest trends and patterns for building apps. He is always eager to work with new tech stacks, so picking up a new framework or language isn’t a problem.</p>
-        </section>
-        <section id="skills">
-            <h2>Skills</h2>
+          </div>
+          <div>
+            <h4>Technologies</h4>
             <ul>
-                <li>Languages: Python, Dart</li>
-                <li>Technologies: Flutter, Web Sockets, Web Scraping</li>
-                <li>Familiar With: AWS, Firebase, Spacy, NLP, Agile Methodologies, MVVM Architecture, REST APIs, Pandas, Numpy</li>
+              <li>Flutter</li>
+              <li>WebSockets</li>
+              <li>Web Scraping</li>
             </ul>
-        </section>
-        <section id="experience">
-            <h2>Experience</h2>
-            <div>
-                <h3>Flutter Developer at Getafix Technologies Pvt. Ltd.</h3>
-                <p>03/2022 – Present</p>
-                <ul>
-                    <li>Build custom packages in Flutter using native Android and iOS functionalities and APIs.</li>
-                    <li>Translate and build designs and wireframes into high-quality responsive UI code.</li>
-                    <li>Resolve existing system problems and suggest new features. Ensure security guidelines are always followed.</li>
-                    <li>Consult with customer-facing representatives about software system design and maintenance.</li>
-                    <li>Perform time profiling and memory leaks assessment.</li>
-                    <li>Follow best practices and keep everything structured and well-documented. Use CI/CD for smooth deployment.</li>
-                    <li>Document projects and code efficiently. Manage code and projects on Git to keep in sync with team members and managers.</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Procurement Analyst at Alchemy Techsol Pvt. Ltd.</h3>
-                <p>08/2021 – 03/2022</p>
-                <ul>
-                    <li>Determining supply needs and researching potential suppliers.</li>
-                    <li>Acting as a liaison and communicating pricing and performance needs to vendors and suppliers.</li>
-                    <li>Sourcing suppliers and testing product samples. Documenting features and benefits of products and services.</li>
-                </ul>
-            </div>
-        </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <div>
-                <h3>Loan Origination System (Radian LOS)</h3>
-                <p>Websockets, Flutter, FCM, Crashlytics</p>
-                <p>Built a mobile app for Loan Officers to provide doorstep loans to borrowers. Customer-facing mobile app to apply for loans and repayment. CRM is built in ReactJS and hosted for internal employees to manage loans.</p>
-            </div>
-            <div>
-                <h3>Algo-Trading Platform (QuantumArc)</h3>
-                <p>Websockets, Flutter</p>
-                <p>The mobile app for algorithmic trading platform designed to provide traders with a comprehensive real-time trading experience. Features include basket execution, auto-stoploss, trailing stoploss, staggered exit, etc.</p>
-            </div>
-            <div>
-                <h3>E-Magazine App (Directorial Disha)</h3>
-                <p>Flutter, Razorpay</p>
-                <p>A comprehensive e-magazine providing vital information to corporate leaders, senior officers, and academicians.</p>
-            </div>
-            <div>
-                <h3>Warehouse Slot Booking (Slot Truck)</h3>
-                <p>Flutter</p>
-                <p>Mobile app for slot booking of trucks in a warehouse to streamline and optimize the logistics process.</p>
-            </div>
-            <div>
-                <h3>Grocery Delivery App (Tendli)</h3>
-                <p>Flutter, Razorpay</p>
-                <p>Created a mobile application for grocery delivery using Flutter framework.</p>
-            </div>
-        </section>
-        <section id="education">
-            <h2>Education</h2>
+          </div>
+          <div>
+            <h4>Proficient In</h4>
             <ul>
-                <li>Masters in Computer Applications (9.40 CGPA), Dr. APJ Abdul Kalam University, Indore (06/2019 - 03/2022)</li>
-                <li>Bachelors in Computer Applications (8.0 CGPA), Amity University, Gwalior (08/2016 - 04/2019)</li>
+              <li>Firebase, AWS</li>
+              <li>MVVM, REST APIs</li>
+              <li>CI/CD, Git</li>
             </ul>
-        </section>
-        <section id="achievements">
-            <h2>Achievements</h2>
-            <ul>
-                <li>Applied Data Science with Python - Level 2 - IBM</li>
-                <li>Data Visualization with Python - IBM</li>
-                <li>Data Analysis with Python - IBM</li>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section">
+        <h3>Experience</h3>
+        <div class="timeline">
+          <article class="card">
+            <header class="card-header">
+              <div>
+                <h4>Flutter Engineer</h4>
+                <p class="muted">Assurex • Sep 2024 – Present</p>
+              </div>
+            </header>
+            <ul class="card-list">
+              <li>Customized onboarding services based on user profiles for a personalized app experience.</li>
+              <li>Integrated parking ticketing and time-saving features; improved convenience and UX.</li>
+              <li>Designed a vehicle management system with secure, personalized profiles.</li>
+              <li>Built "Find My Car" using GPS; assisted users to locate parked vehicles effortlessly.</li>
+              <li>Implemented maintenance reporting for rapid issue logging and tracking.</li>
+              <li>Enhanced Digital ID to allow seamless business card sharing.</li>
+              <li>Added real-time navigation for DIFC with up-to-date directions.</li>
+              <li>Stack: Azure DevOps • Azure Functions • CI/CD</li>
             </ul>
-        </section>
+          </article>
+
+          <article class="card">
+            <header class="card-header">
+              <div>
+                <h4>Associate Software Developer</h4>
+                <p class="muted">Getafix Technologies Pvt. Ltd. • Mar 2022 – Aug 2024</p>
+              </div>
+            </header>
+            <ul class="card-list">
+              <li>Led a team of mobile developers; gathered requirements and shipped real-world solutions.</li>
+              <li>Built custom Flutter packages and responsive UI from wireframes.</li>
+              <li>Resolved system issues, optimized performance, and enforced engineering best practices.</li>
+              <li>Owned CI/CD and Git workflows to keep teams in sync and deployments smooth.</li>
+              <li>Focus: Flutter • WebSockets • App Release Management</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <header class="card-header">
+              <div>
+                <h4>Presales Executive</h4>
+                <p class="muted">Alchemy Techsol Pvt. Ltd. • Aug 2021 – Mar 2022</p>
+              </div>
+            </header>
+            <ul class="card-list">
+              <li>Researched suppliers, managed pricing and performance metrics.</li>
+              <li>Liaised between vendors and internal teams; documented product features.</li>
+              <li>Client handling • Resource allocation • Billing management</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <h3>Projects</h3>
+        <div class="projects-grid">
+          <article class="project">
+            <h4>Smart Parking & Vehicle Manager</h4>
+            <p>End‑to‑end suite including ticketing, "Find My Car", maintenance reporting, and Digital ID features. Real‑time navigation and secure profiles.</p>
+            <ul class="tags"><li>Flutter</li><li>Maps</li><li>Firebase</li></ul>
+          </article>
+          <article class="project">
+            <h4>Realtime City Navigation (DIFC)</h4>
+            <p>Turn‑by‑turn directions with live updates and route recalculation for business district navigation.</p>
+            <ul class="tags"><li>Flutter</li><li>WebSockets</li><li>Azure</li></ul>
+          </article>
+          <article class="project">
+            <h4>Reusable Flutter UI Kit</h4>
+            <p>Component library and internal packages to speed up development across multiple apps.</p>
+            <ul class="tags"><li>Flutter</li><li>Packages</li><li>CI/CD</li></ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <h3>Contact</h3>
+        <p>If you'd like to collaborate or have an opportunity in mind, feel free to reach out.</p>
+        <div class="contact-cards">
+          <a class="contact-card" href="mailto:trapti321t@gmail.com">
+            <span>✉️</span>
+            <div>
+              <strong>Email</strong>
+              <div>trapti321t@gmail.com</div>
+            </div>
+          </a>
+          <a class="contact-card" href="tel:+919396986223">
+            <span>📱</span>
+            <div>
+              <strong>Phone</strong>
+              <div>+91 93996 86223</div>
+            </div>
+          </a>
+          <a class="contact-card" target="_blank" rel="noopener" href="https://github.com/trapti321">
+            <span>💻</span>
+            <div>
+              <strong>GitHub</strong>
+              <div>@trapti321</div>
+            </div>
+          </a>
+        </div>
+        <footer class="site-footer">
+          <p>© <span id="year"></span> Trapti Gupta</p>
+        </footer>
+      </section>
     </main>
-    <footer>
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:trapti321.tg@gmail.com">trapti321.tg@gmail.com</a></p>
-        <p>Phone: +91 70490 80744</p>
-        <p>Location: Gwalior, India</p>
-        <p>GitHub: <a href="https://github.com/trapti321">github.com/trapti321</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/trapti-gupta-1b4281135">linkedin.com/in/trapti-gupta-1b4281135</a></p>
-    </footer>
-    <script src="scripts.js"></script>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
