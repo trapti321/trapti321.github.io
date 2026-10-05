@@ -1,194 +1,1197 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Trapti Gupta • Flutter Engineer</title>
-  <meta name="description" content="Portfolio of Trapti Gupta, Flutter Engineer. Projects, experience, skills, and contact information." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="https://storage.googleapis.com/cms-storage-bucket/favicon.4fd0db61df0567c0f352.png" />
+    <title>Trapti Gupta</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trapti Gupta - Senior Mobile Developer with 5.4+ years of experience in Flutter, Dart, BLoC, Riverpod, Clean Architecture, Firebase, and Mobile App Development">
+
+    <meta property="og:title" content="Trapti Gupta - Senior Mobile Developer" />
+    <meta property="og:description" content="Senior Mobile Developer with 5.4+ years of experience building production-grade Flutter applications across FinTech, algorithmic trading, and mobility platforms." />
+    <meta property="og:url" content="https://trapti321.github.io" />
+    <meta property="og:image" content="https://trapti321.github.io/assets/images/profile.png">
+
+
+    <!-- <meta property="og:image"
+            content="https://lh3.googleusercontent.com/ogw/ADea4I68DN5rmXSVYx9P_d9JBNDzK5E415_tjSmlOMMTiA"> -->
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet'
+        type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- FontAwesome JS -->
+    <!-- <script defer src="assets/fontawesome/js/all.js"></script> -->
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+        integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+        crossorigin="anonymous"></script>
+
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+
+    <!-- github calendar css -->
+    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css">
+    <!-- github acitivity css -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+    <link rel="stylesheet" href="assets/plugins/github-activity/github-activity-0.1.5.min.css">
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- Fonts for technologies and softwares -->
+    <link rel="stylesheet" href="assets/css/font-mfizz-2.4.1/font-mfizz.css">
+
+    <style>
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: Verdana, sans-serif;
+            margin: 0
+        }
+
+        .mySlides {
+            display: none
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "previous button" to the left */
+        .prev {
+            left: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Caption text */
+        .text {
+            color: #000000;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 8px;
+            width: 20px;
+            margin: 0 2px;
+            background-color: #e8e8e8;
+            /* border-radius: 50%; */
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #54ba4e;
+        }
+
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        .wrapper {
+            /* width: 500px; */
+            overflow-x: scroll;
+            white-space: nowrap;
+        }
+
+        .roundedBox {
+            border-radius: 25px;
+            border: 2px solid #54ba4e;
+            padding: 20px;
+            /* width: 200px; */
+            /* height: 150px; */
+        }
+
+        .roundedBoxText {
+            color: 2px solid #54ba4e;
+            padding: 20px;
+        }
+
+
+
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+
+            .prev,
+            .next,
+            .text {
+                font-size: 11px
+            }
+        }
+    </style>
 </head>
+
 <body>
-  <div class="layout">
-    <aside class="sidebar">
-      <div class="avatar" aria-hidden="true">TG</div>
-      <h1 class="name">Trapti Gupta</h1>
-      <p class="role">Flutter Engineer</p>
-      <div class="social">
-        <a href="mailto:trapti321t@gmail.com" aria-label="Email">✉️</a>
-        <a href="https://github.com/trapti321" target="_blank" rel="noopener" aria-label="GitHub">🐙</a>
-        <a href="https://www.linkedin.com/in/trapti-gupta-14281315" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
-        <button id="themeToggle" class="ghost" aria-label="Toggle theme">☾</button>
-      </div>
-      <nav class="side-nav">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <div class="location">📍 Gwalior, India</div>
-      <a class="resume" href="assets/Trapti_Gupta_Resume.pdf" download>Download Resume</a>
-    </aside>
+    <!-- ******HEADER****** -->
+    <header class="header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col">
+                    <img class="profile-image img-fluid float-start rounded-circle" width="180"
+                        src="assets/images/profile.png" alt="Trapti Gupta" />
+                    <div class="profile-content">
+                        <h1 class="name">Trapti Gupta</h1>
+                        <h2 class="desc">Senior Mobile Developer</h2>
+                        <ul class="social list-inline">
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/trapti321/"
+                                    target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
 
-    <main class="content">
-      <section id="home" class="hero">
-        <h2>Hi, I'm <span class="accent">Trapti</span> — I build clean, performant Flutter apps.</h2>
-        <p class="subtitle">Focused on delightful UX, scalable architecture, and real‑time features.</p>
-        <div class="actions">
-          <a class="btn" href="#projects">See Projects</a>
-          <a class="btn btn-ghost" href="#contact">Hire Me</a>
-        </div>
-      </section>
+                            <li class="list-inline-item"><a href="https://github.com/trapti321" target="_blank"
+                                    rel="noopener noreferrer"><i class="fab fa-github-alt"></i></a></li>
 
-      <section id="about" class="section">
-        <h3>About</h3>
-        <p>
-          Dedicated and passionate Mobile App Developer with extensive experience in writing clean, efficient, and elegant code. Technology enthusiast, always staying updated with the latest trends and development patterns. Skilled at quickly adopting new frameworks and languages, thriving in dynamic environments.
-        </p>
-      </section>
+                            <li class="list-inline-item"><a href="https://play.google.com/store/apps/dev?id=7135905913091619860"
+                                    target="_blank" rel="noopener noreferrer"><i class="fab fa-google-play"></i></a></li>
 
-      <section id="skills" class="section">
-        <h3>Skills</h3>
-        <div class="skills-grid">
-          <div>
-            <h4>Languages</h4>
-            <ul>
-              <li>Dart</li>
-              <li>Python</li>
-            </ul>
-          </div>
-          <div>
-            <h4>Technologies</h4>
-            <ul>
-              <li>Flutter</li>
-              <li>WebSockets</li>
-              <li>Web Scraping</li>
-            </ul>
-          </div>
-          <div>
-            <h4>Proficient In</h4>
-            <ul>
-              <li>Firebase, AWS</li>
-              <li>MVVM, REST APIs</li>
-              <li>CI/CD, Git</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+                        </ul>
+                    </div>
+                    <!--//profile-->
+                </div>
+                <!--//col-->
+                <div class="col-12 col-md-auto">
+                    <div class="dark-mode-switch d-flex">
+                        <div class="form-check form-switch mx-auto mx-md-0">
+                            <input type="checkbox" class="form-check-input me-2" id="darkSwitch" />
+                            <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
 
-      <section id="experience" class="section">
-        <h3>Experience</h3>
-        <div class="timeline">
-          <article class="card">
-            <header class="card-header">
-              <div>
-                <h4>Flutter Engineer</h4>
-                <p class="muted">Assurex • Sep 2024 – Present</p>
-              </div>
-            </header>
-            <ul class="card-list">
-              <li>Customized onboarding services based on user profiles for a personalized app experience.</li>
-              <li>Integrated parking ticketing and time-saving features; improved convenience and UX.</li>
-              <li>Designed a vehicle management system with secure, personalized profiles.</li>
-              <li>Built "Find My Car" using GPS; assisted users to locate parked vehicles effortlessly.</li>
-              <li>Implemented maintenance reporting for rapid issue logging and tracking.</li>
-              <li>Enhanced Digital ID to allow seamless business card sharing.</li>
-              <li>Added real-time navigation for DIFC with up-to-date directions.</li>
-              <li>Stack: Azure DevOps • Azure Functions • CI/CD</li>
-            </ul>
-          </article>
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+                                <title>Dark and Light Mode Toggle</title>
+                                <description>A user interface toggle with two options - a sun with a cloud that animates
+                                    to a
+                                    crescent moon with stars</description>
+                                <defs>
+                                    <filter id="shadow" x="-100%" y="-100%" width="250%" height="250%">
+                                        <feGaussianBlur stdDeviation="4" result="coloredBlur" />
+                                        <feOffset dx="0" dy="0" result="offsetblur"></feOffset>
+                                        <feFlood id="glowAlpha" flood-color="#000" flood-opacity="0.07"></feFlood>
+                                        <feComposite in2="offsetblur" operator="in"></feComposite>
+                                        <feMerge>
+                                            <feMergeNode />
+                                            <feMergeNode in="SourceGraphic"></feMergeNode>
+                                        </feMerge>
+                                    </filter>
+                                    <mask id="moonMask">
+                                        <rect id="outlineFill" x="225" y="215" width="350" height="170" rx="86" ry="86"
+                                            fill="#FFF" stroke="#000" stroke-width="0" />
+                                        <circle class="moonMask" cx="487" cy="300" r="66" fill="#06070B" />
+                                    </mask>
+                                    <clipPath id="outlineMask">
+                                        <use xlink:href="#outlineFill" />
+                                    </clipPath>
 
-          <article class="card">
-            <header class="card-header">
-              <div>
-                <h4>Associate Software Developer</h4>
-                <p class="muted">Getafix Technologies Pvt. Ltd. • Mar 2022 – Aug 2024</p>
-              </div>
-            </header>
-            <ul class="card-list">
-              <li>Led a team of mobile developers; gathered requirements and shipped real-world solutions.</li>
-              <li>Built custom Flutter packages and responsive UI from wireframes.</li>
-              <li>Resolved system issues, optimized performance, and enforced engineering best practices.</li>
-              <li>Owned CI/CD and Git workflows to keep teams in sync and deployments smooth.</li>
-              <li>Focus: Flutter • WebSockets • App Release Management</li>
-            </ul>
-          </article>
+                                    <path id="cloud"
+                                        d="M20.67,42.52h39c22,0,18-16.52,11.19-17.51,1.93-7.5-1.94-25-23.19-25s-24,18-24,18S12.75,13.2,5,18.83C-3.8,25.15-2.33,42.52,20.67,42.52Z" />
+                                </defs>
 
-          <article class="card">
-            <header class="card-header">
-              <div>
-                <h4>Presales Executive</h4>
-                <p class="muted">Alchemy Techsol Pvt. Ltd. • Aug 2021 – Mar 2022</p>
-              </div>
-            </header>
-            <ul class="card-list">
-              <li>Researched suppliers, managed pricing and performance metrics.</li>
-              <li>Liaised between vendors and internal teams; documented product features.</li>
-              <li>Client handling • Resource allocation • Billing management</li>
-            </ul>
-          </article>
-        </div>
-      </section>
+                                <g class="whole">
 
-      <section id="projects" class="section">
-        <h3>Projects</h3>
-        <div class="projects-grid">
-          <article class="project">
-            <h4>Smart Parking & Vehicle Manager</h4>
-            <p>End‑to‑end suite including ticketing, "Find My Car", maintenance reporting, and Digital ID features. Real‑time navigation and secure profiles.</p>
-            <ul class="tags"><li>Flutter</li><li>Maps</li><li>Firebase</li></ul>
-          </article>
-          <article class="project">
-            <h4>Realtime City Navigation (DIFC)</h4>
-            <p>Turn‑by‑turn directions with live updates and route recalculation for business district navigation.</p>
-            <ul class="tags"><li>Flutter</li><li>WebSockets</li><li>Azure</li></ul>
-          </article>
-          <article class="project">
-            <h4>Reusable Flutter UI Kit</h4>
-            <p>Component library and internal packages to speed up development across multiple apps.</p>
-            <ul class="tags"><li>Flutter</li><li>Packages</li><li>CI/CD</li></ul>
-          </article>
-        </div>
-      </section>
+                                    <rect class="outline" x="220" y="210" width="360" height="180" rx="90" ry="90"
+                                        fill="#85E8FE" stroke="#FCFDFE" stroke-width="10" />
+                                    <g class="starGroup" fill="#FFF" clip-path="url(#outlineMask)">
+                                        <polygon
+                                            points="405 248.25 406.58 254.42 412.75 256 406.58 257.58 405 263.75 403.42 257.58 397.25 256 403.42 254.42 405 248.25" />
+                                        <path d="M427.33,301.9a1.5,1.5,0,0,0,0-3,1.5,1.5,0,0,0,0,3Z" />
+                                        <path d="M402.59,367.21a1.5,1.5,0,0,0,0-3,1.5,1.5,0,0,0,0,3Z" />
+                                        <polygon
+                                            points="447 325.5 450.17 337.83 462.5 341 450.17 344.17 447 356.5 443.83 344.17 431.5 341 443.83 337.83 447 325.5" />
+                                        <path d="M464,241.53a1.5,1.5,0,0,0,0-3,1.5,1.5,0,0,0,0,3Z" />
+                                        <polygon
+                                            points="496 274.25 497.58 280.42 503.75 282 497.58 283.58 496 289.75 494.42 283.58 488.25 282 494.42 280.42 496 274.25" />
+                                        <path d="M503.53,351.38a1.5,1.5,0,0,0,0-3,1.5,1.5,0,0,0,0,3Z" />
+                                        <path d="M537.18,249.45a1.5,1.5,0,0,0,0-3,1.5,1.5,0,0,0,0,3Z" />
+                                        <path d="M553,322.68a1.5,1.5,0,0,0,0-3,1.5,1.5,0,0,0,0,3Z" />
+                                    </g>
+                                    <circle class="sun" cx="486" cy="300" r="66" fill="#FEC100" />
+                                    <g mask="url(#moonMask)">
+                                        <circle class="moon" cx="403" cy="300" r="66" fill="#FFF" opacity="0" />
+                                    </g>
 
-      <section id="contact" class="section">
-        <h3>Contact</h3>
-        <p>If you'd like to collaborate or have an opportunity in mind, feel free to reach out.</p>
-        <div class="contact-cards">
-          <a class="contact-card" href="mailto:trapti321t@gmail.com">
-            <span>✉️</span>
-            <div>
-              <strong>Email</strong>
-              <div>trapti321t@gmail.com</div>
+                                    <g class="planeGroup" fill="#FFF" clip-path="url(#outlineMask)" opacity="1">
+
+                                        <path class="plane"
+                                            d="M611.12,262.15l-7.16,0-6.48-5.43-1.06.58,1.93,4.88-3.67.06-3.48-3.37-.78.36,1.26,3.05h-.58a27.07,27.07,0,0,0,4.6,2.24s8.57,0,12.37,0H611c.65,0,2.19,0,2.19-1.25C613.19,262.26,612.05,262.15,611.12,262.15Z"
+                                            fill="#fff" />
+                                        <line class="contrail" x1="590.17" y1="264" x2="246.51" y2="264" fill="none"
+                                            stroke="#fff" stroke-width="1" />
+
+                                    </g>
+                                    <g class="cloudGroup" fill="#FFF" clip-path="url(#outlineMask)">
+                                        <g class="cloud" filter="url(#shadow)">
+                                            <rect x="515.79" y="314.92" width="47.15" height="10.37" rx="5.19"
+                                                ry="5.19" />
+                                            <circle cx="521.45" cy="313.98" r="11.32" />
+                                            <circle cx="540.84" cy="305.91" r="15.61" />
+                                            <circle cx="556.82" cy="316.34" r="8.96" />
+                                        </g>
+                                        <g class="cloud" filter="url(#shadow)">
+                                            <rect x="397.85" y="349.02" width="92.34" height="10.37" rx="5.19" ry="5.19"
+                                                transform="translate(888.03 708.41) rotate(180)" />
+                                            <circle cx="484.53" cy="348.08" r="11.32" />
+                                            <circle cx="432.65" cy="332.46" r="24.66" />
+                                            <circle cx="464.35" cy="338.11" r="17.51" />
+                                            <circle cx="404.21" cy="348.19" r="11.32" />
+                                        </g>
+                                    </g>
+
+                                </g>
+                                <rect class="hit" x="220" y="210" width="360" height="180" rx="90" ry="90"
+                                    fill="transparent" stroke="none" stroke-width="0" />
+                            </svg> -->
+                        <!-- </label> -->
+                        </div>
+                    </div>
+
+                    <!--//dark-mode-switch-->
+                    <a class="btn btn-cta-primary float-right" href="mailto:trapti321.tg@gmail.com" target="_blank"
+                        rel="noopener noreferrer"><i class="fas fa-paper-plane"></i> Contact Me</a>
+                </div>
+                <!--//col-->
             </div>
-          </a>
-          <a class="contact-card" href="tel:+919396986223">
-            <span>📱</span>
-            <div>
-              <strong>Phone</strong>
-              <div>+91 93996 86223</div>
-            </div>
-          </a>
-          <a class="contact-card" target="_blank" rel="noopener" href="https://github.com/trapti321">
-            <span>💻</span>
-            <div>
-              <strong>GitHub</strong>
-              <div>@trapti321</div>
-            </div>
-          </a>
+            <!--//row-->
         </div>
-        <footer class="site-footer">
-          <p>© <span id="year"></span> Trapti Gupta</p>
-        </footer>
-      </section>
-    </main>
-  </div>
+        <!--//container-->
+    </header>
+    <!--//header-->
 
-  <script src="script.js"></script>
+    <div class="container sections-wrapper py-5">
+        <div class="row">
+            <div class="primary col-lg-8 col-12">
+                <section class="about section">
+                    <div class="section-inner">
+                        <h2 class="heading">About Me</h2>
+                        <div class="content">
+                            <p>
+                                Senior Mobile Developer with 5.4 years of experience building and scaling production-grade Flutter applications across FinTech, algorithmic trading, and mobility platforms. Proven leader in owning mobile architecture, mentoring developers, and delivering end-to-end iOS/Android products with measurable impact, including 60% faster releases and 30% fewer critical bugs.
+                            </p>
+                            <p>
+                                Expertise in Flutter, Dart, BLoC, Riverpod, Clean Architecture, REST, WebSockets, Firebase, CI/CD, payments, GPS/navigation, and real-time systems. Experienced with AI-Assisted Development including MCP Protocol, Agentic Workflows, and LLM-Assisted Prompt Engineering.
+                            </p>
+                        </div>
+                        <!--//content-->
+                    </div>
+                    <!--//section-inner-->
+                </section>
+                <!--//section-->
+
+                <section class="experience section">
+                    <div class="section-inner">
+                        <h2 class="heading">Work Experience</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title">Senior Flutter Developer - <span class="place"><a
+                                            href="https://play.google.com/store/apps/details?id=com.kitab.ai" target="_blank"
+                                            rel="noopener noreferrer">Kitab</a></span> <span class="year">(January 2026 - July 2026)</span>
+                                </h3>
+                                <p>AI-driven content discovery and personalization app for curated learning and audio content.</p>
+                                <ul>
+                                    <li>Increased Day-7 retention by 12% through personalized onboarding based on user goals, motivation, and learning preferences.</li>
+                                    <li>Architected core experiences serving 1,000+ monthly active users across discovery, journeys, summaries, and personalized content.</li>
+                                    <li>Cut design-to-code handoff time by 30% and accelerated feature delivery by 20% through MCP-powered development workflows.</li>
+                                    <li>Reduced app size by 15 MB and duplicate-code footprint by 20% by building reusable widgets and refactoring UI components.</li>
+                                    <li>Reduced UI-related bug reports by 20% by introducing golden tests across core Flutter screens.</li>
+                                </ul>
+                                <p><strong>Tech Stack:</strong> Flutter, Dart, BLoC, go_router, Supabase, Dio, just_audio, audio_service, Freezed, GetIt, Mixpanel, OneSignal, MCP, intl/l10n, Golden Tests</p>
+                            </div>
+                            <!--//item-->
+                            <div class="item">
+                                <h3 class="title">Flutter Engineer - <span class="place"><a
+                                            href="https://play.google.com/store/apps/details?id=com.difc" target="_blank"
+                                            rel="noopener noreferrer">Assurex</a></span> <span class="year">(September 2024 - January 2026)</span>
+                                </h3>
+                                <p>Mobility and parking management platform for Dubai International Financial Centre.</p>
+                                <ul>
+                                    <li>Cut release turnaround time 60%, from 5 days to 2 days, by automating Play Store and App Store deployments.</li>
+                                    <li>Reduced checkout drop-off by 18% while processing 5,000+ monthly parking transactions through integrated payment gateways.</li>
+                                    <li>Reduced vehicle-recovery incidents by 25% and improved facilities response time by 30% through GPS and incident-management features.</li>
+                                    <li>Delivered real-time floor-level navigation supporting 10,000+ daily users through GPS and facility positioning integration.</li>
+                                    <li>Extended mobile functionality to desktop browsers through a Flutter Web MVP, accelerating stakeholder validation.</li>
+                                </ul>
+                                <p><strong>Tech Stack:</strong> Flutter, Dart, Azure DevOps Services, Azure Functions, CI/CD Pipelines, Payment Gateway, Clean Architecture, Google Maps SDK, Flutter Web</p>
+                            </div>
+                            <!--//item-->
+                            <div class="item">
+                                <h3 class="title">Full Stack Developer (Mobile-Focused) - <span class="place"><a
+                                            href="https://getafixtechnologies.com/" target="_blank"
+                                            rel="noopener noreferrer">Getafix Technologies Pvt. Ltd.</a></span> <span class="year">(March 2022 - September 2024)</span>
+                                </h3>
+                                <p>Service-based company delivering end-to-end software solutions for startups.</p>
+                                <ul>
+                                    <li>Led 4 mobile developers across 10 release cycles, driving sprint planning, code reviews, and delivery execution.</li>
+                                    <li>Maintained 95% on-time delivery while owning 2-4 mobile apps simultaneously across 6 client engagements.</li>
+                                    <li>Cut new-feature development time by 25% by creating reusable Flutter packages with native Android/iOS integrations.</li>
+                                    <li>Reduced post-release critical bugs by 30% through production diagnostics and secure coding practices across the SDLC.</li>
+                                </ul>
+                                <p><strong>Tech Stack:</strong> Flutter, Dart, WebSockets, App Release Management, Agile/Scrum</p>
+                            </div>
+                            <!--//item-->
+                            <div class="item">
+                                <h3 class="title">Flutter Developer - <span class="place">Freelance</span> <span class="year">(March 2021 - March 2022)</span>
+                                </h3>
+                                <p>Independent mobile development for international clients.</p>
+                                <ul>
+                                    <li>Delivered a Germany-based HR application independently from architecture through deployment, completing the project on time and within scope.</li>
+                                    <li>Replaced manual attendance tracking for 150+ employees by implementing a secure NFC-based check-in/check-out system.</li>
+                                    <li>Cut manual HR processing time by 40% by developing integrated task and leave-management workflows.</li>
+                                </ul>
+                                <p><strong>Tech Stack:</strong> Flutter, Firebase, NFC, State Management, Responsive UI, REST APIs</p>
+                            </div>
+                            <!--//item-->
+                        </div>
+                        <!--//content-->
+                    </div>
+                    <!--//section-inner-->
+                </section>
+                <!--//section-->
+
+                <section class="projects section">
+                    <div class="section-inner">
+                        <h2 class="heading">Key Projects</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title"><a href="https://play.google.com/store/apps/details?id=com.difc" target="_blank" rel="noopener noreferrer">DIFC+ - Dubai International Financial Centre</a></h3>
+                                <p class="summary">Mobility and parking management platform serving 20,000+ registered users</p>
+                                <ul>
+                                    <li>Personalized onboarding, in-app parking payments, vehicle profiles, 'Find My Car,' and maintenance reporting (DIFC Eye).</li>
+                                    <li>Achieved 4.5-star Play Store rating with comprehensive user experience features.</li>
+                                    <li>Integrated real-time GPS navigation and facility positioning for floor-level guidance.</li>
+                                </ul>
+                                <p><strong>Tech Stack:</strong> Flutter, Dart, Azure DevOps Services, Azure Functions, CI/CD Pipelines, Payment Gateway, Clean Architecture, Google Maps SDK</p>
+                            </div>
+                            <!--//item-->
+                            <div class="item">
+                                <h3 class="title"><a href="https://play.google.com/store/apps/details?id=com.kitab.ai" target="_blank" rel="noopener noreferrer">Kitab - Transform Yourself</a></h3>
+                                <p class="summary">AI-driven content discovery and personalization app</p>
+                                <ul>
+                                    <li>Curated learning and audio content platform reaching 50,000+ downloads and 25% Day-30 retention.</li>
+                                    <li>Built personalized onboarding flows based on user goals, motivation, and learning preferences.</li>
+                                    <li>Implemented audio playback with background service support and offline capabilities.</li>
+                                </ul>
+                                <p><strong>Tech Stack:</strong> Flutter, Dart, BLoC, go_router, Supabase, Dio, just_audio, audio_service, Freezed, GetIt, Mixpanel, OneSignal, MCP, intl/l10n</p>
+                            </div>
+                            <!--//item-->
+                            <div class="item">
+                                <h3 class="title">TechPay.ai - FinTech Service-as-Software Platform</h3>
+                                <p class="summary">AI-enabled fintech platform for technology financing</p>
+                                <ul>
+                                    <li>Built and owned the Flutter application layer for TechPay.ai, an AI-enabled fintech platform.</li>
+                                    <li>Integrated backend APIs to power core in-app functionality end-to-end.</li>
+                                    <li>Published on Google Play with Service-as-Software solutions for technology financing.</li>
+                                </ul>
+                                <p><strong>Tech Stack:</strong> Flutter, Dart, REST APIs, Backend Integration</p>
+                            </div>
+                            <!--//item-->
+                        </div>
+                        <!--//content-->
+                    </div>
+                    <!--//section-inner-->
+                </section>
+                <!--//section-->
+
+                <!-- Certifications Section -->
+                <section class="certifications section">
+                    <div class="section-inner">
+                        <h2 class="heading">Certifications</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li class="item">
+                                    <i class="fas fa-certificate"></i> <strong>Supervised Learning with Scikit-learn</strong><br>
+                                    <span class="text-muted">DataCamp | Issued Feb 2021</span>
+                                </li>
+                                <br>
+                                <li class="item">
+                                    <i class="fas fa-certificate"></i> <strong>Python for Data Science</strong><br>
+                                    <span class="text-muted">DataCamp | Issued Feb 2021</span>
+                                </li>
+                                <br>
+                                <li class="item">
+                                    <i class="fas fa-certificate"></i> <strong>Applied Data Science with Python - Level 2</strong><br>
+                                    <span class="text-muted">IBM | Issued Dec 2020</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--//content-->
+                    </div>
+                    <!--//section-inner-->
+                </section>
+                <!--//section-->
+
+                <section class="android-apps section">
+                    <div class="section-inner">
+                        <h2 class="heading">Mobile Apps <a href="https://play.google.com/store/apps/dev?id=7135905913091619860" target="_blank" rel="noopener noreferrer" class="more-link" style="font-size: 14px; margin-left: 10px;"><i class="fab fa-google-play"></i> View All</a></h2>
+                        <div class="content">
+                            <div class="apps-grid">
+                                
+                                <!-- Ghost Trap -->
+                                <div class="app-card" data-bs-toggle="modal" data-bs-target="#appModal1">
+                                    <div class="app-header">
+                                        <img src="assets/images/apps/ghosttrap-icon.png" alt="Ghost Trap" class="app-icon">
+                                        <div class="app-info">
+                                            <h4 class="app-name">Ghost Trap: Reveal the World</h4>
+                                            <p class="app-category">Arcade</p>
+                                        </div>
+                                    </div>
+                                    <div class="app-screenshots-preview">
+                                        <img src="assets/images/apps/ghosttrap-1.png" alt="Screenshot">
+                                        <img src="assets/images/apps/ghosttrap-2.png" alt="Screenshot">
+                                        <img src="assets/images/apps/ghosttrap-3.png" alt="Screenshot">
+                                        <img src="assets/images/apps/ghosttrap-4.png" alt="Screenshot">
+                                        <img src="assets/images/apps/ghosttrap-5.png" alt="Screenshot">
+                                    </div>
+                                    <p class="app-description">Claim territory, dodge or trap ghosts, reveal world landmarks in arcade puzzle!</p>
+                                    <div class="app-stats">
+                                        <span class="stat-item"><i class="fas fa-download"></i> 10+</span>
+                                        <span class="stat-item"><i class="fas fa-star"></i> 5.0</span>
+                                    </div>
+                                </div>
+
+                                <!-- File Forge -->
+                                <div class="app-card" data-bs-toggle="modal" data-bs-target="#appModal2">
+                                    <div class="app-header">
+                                        <img src="assets/images/apps/fileforge-icon.png" alt="File Forge" class="app-icon">
+                                        <div class="app-info">
+                                            <h4 class="app-name">File Forge: Convert & Extract</h4>
+                                            <p class="app-category">Tools</p>
+                                        </div>
+                                    </div>
+                                    <div class="app-screenshots-preview">
+                                        <img src="assets/images/apps/fileforge-1.png" alt="Screenshot">
+                                        <img src="assets/images/apps/fileforge-2.png" alt="Screenshot">
+                                        <img src="assets/images/apps/fileforge-3.png" alt="Screenshot">
+                                        <img src="assets/images/apps/fileforge-4.png" alt="Screenshot">
+                                        <img src="assets/images/apps/fileforge-5.png" alt="Screenshot">
+                                    </div>
+                                    <p class="app-description">Convert, compress & edit media files! Extract metadata, text, PDFs & scan QR.</p>
+                                    <div class="app-stats">
+                                        <span class="stat-item"><i class="fas fa-download"></i> 100+</span>
+                                        <span class="stat-item"><i class="fas fa-star"></i> 5.0</span>
+                                    </div>
+                                </div>
+
+                                <!-- VapeQuit -->
+                                <div class="app-card" data-bs-toggle="modal" data-bs-target="#appModal3">
+                                    <div class="app-header">
+                                        <img src="assets/images/apps/vapequit-icon.png" alt="VapeQuit" class="app-icon">
+                                        <div class="app-info">
+                                            <h4 class="app-name">VapeQuit: Quit Vaping & Smoke</h4>
+                                            <p class="app-category">Health & Fitness</p>
+                                        </div>
+                                    </div>
+                                    <div class="app-screenshots-preview">
+                                        <img src="assets/images/apps/vapequit-1.png" alt="Screenshot">
+                                        <img src="assets/images/apps/vapequit-2.png" alt="Screenshot">
+                                    </div>
+                                    <p class="app-description">Quit vaping & nicotine habits. Track clean time, money saved & beat cravings.</p>
+                                    <div class="app-stats">
+                                        <span class="stat-item"><i class="fas fa-download"></i> 5+</span>
+                                        <span class="stat-item"><i class="fas fa-star"></i> 5.0</span>
+                                    </div>
+                                </div>
+
+                                <!-- Aarti Sangrah -->
+                                <div class="app-card" data-bs-toggle="modal" data-bs-target="#appModal4">
+                                    <div class="app-header">
+                                        <img src="assets/images/apps/aarti-icon.png" alt="Aarti Sangrah" class="app-icon">
+                                        <div class="app-info">
+                                            <h4 class="app-name">Aarti Sangrah: Daily Prayers</h4>
+                                            <p class="app-category">Lifestyle</p>
+                                        </div>
+                                    </div>
+                                    <div class="app-screenshots-preview">
+                                        <img src="assets/images/apps/aarti-1.png" alt="Screenshot">
+                                        <img src="assets/images/apps/aarti-2.png" alt="Screenshot">
+                                        <img src="assets/images/apps/aarti-3.png" alt="Screenshot">
+                                        <img src="assets/images/apps/aarti-4.png" alt="Screenshot">
+                                        <img src="assets/images/apps/aarti-5.png" alt="Screenshot">
+                                    </div>
+                                    <p class="app-description">300+ Aartis, Mantras, Stotrams & festival collections for your daily worship.</p>
+                                    <div class="app-stats">
+                                        <span class="stat-item"><i class="fas fa-download"></i> 100+</span>
+                                        <span class="stat-item"><i class="fas fa-star"></i> 4.8</span>
+                                    </div>
+                                </div>
+
+                                <!-- CitizenPrep -->
+                                <div class="app-card" data-bs-toggle="modal" data-bs-target="#appModal5">
+                                    <div class="app-header">
+                                        <img src="assets/images/apps/citizenprep-icon.png" alt="CitizenPrep" class="app-icon">
+                                        <div class="app-info">
+                                            <h4 class="app-name">CitizenPrep</h4>
+                                            <p class="app-category">Education</p>
+                                        </div>
+                                    </div>
+                                    <div class="app-screenshots-preview">
+                                        <img src="assets/images/apps/citizenprep-1.png" alt="Screenshot">
+                                        <img src="assets/images/apps/citizenprep-2.png" alt="Screenshot">
+                                    </div>
+                                    <p class="app-description">Prepare for your citizenship test with practice questions and progress tracking.</p>
+                                    <div class="app-stats">
+                                        <span class="stat-item"><i class="fas fa-download"></i> 0+</span>
+                                    </div>
+                                </div>
+
+                                <!-- BillBuddy -->
+                                <div class="app-card" data-bs-toggle="modal" data-bs-target="#appModal6">
+                                    <div class="app-header">
+                                        <img src="assets/images/apps/billbuddy-icon.png" alt="BillBuddy" class="app-icon">
+                                        <div class="app-info">
+                                            <h4 class="app-name">BillBuddy - Bills & Budget</h4>
+                                            <p class="app-category">Finance</p>
+                                        </div>
+                                    </div>
+                                    <div class="app-screenshots-preview">
+                                        <img src="assets/images/apps/billbuddy-1.png" alt="Screenshot">
+                                        <img src="assets/images/apps/billbuddy-2.png" alt="Screenshot">
+                                    </div>
+                                    <p class="app-description">Track bills, manage budgets, split expenses & understand spending.</p>
+                                    <div class="app-stats">
+                                        <span class="stat-item"><i class="fas fa-download"></i> 10+</span>
+                                        <span class="stat-item"><i class="fas fa-star"></i> 5.0</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--//content-->
+                    </div>
+                    <!--//section-inner-->
+                </section>
+                <!--//section-->
+
+                <!-- App Modals -->
+                <!-- Modal 1: Ghost Trap -->
+                <div class="modal fade" id="appModal1" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/images/apps/ghosttrap-icon.png" alt="Ghost Trap" class="app-modal-icon me-3" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 56 56%22><rect fill=%22%234CAF50%22 width=%2256%22 height=%2256%22 rx=%2212%22/><text x=%2228%22 y=%2236%22 text-anchor=%22middle%22 fill=%22white%22 font-size=%2220%22 font-weight=%22bold%22>G</text></svg>'">
+                                    <div>
+                                        <h5 class="modal-title">Ghost Trap: Reveal the World</h5>
+                                        <p class="modal-subtitle mb-0">Arcade</p>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="screenshots-carousel">
+                                    <div class="screenshots-wrapper">
+                                        <img src="assets/images/apps/ghosttrap-1.png" alt="Screenshot 1" onerror="this.style.display='none'">
+                                        <img src="assets/images/apps/ghosttrap-2.png" alt="Screenshot 2" onerror="this.style.display='none'">
+                                        <img src="assets/images/apps/ghosttrap-3.png" alt="Screenshot 3" onerror="this.style.display='none'">
+                                        <img src="assets/images/apps/ghosttrap-4.png" alt="Screenshot 3" onerror="this.style.display='none'">
+                                        <img src="assets/images/apps/ghosttrap-5.png" alt="Screenshot 3" onerror="this.style.display='none'">
+                                    </div>
+                                </div>
+                                <div class="app-stats mt-3">
+                                    <span class="stat-item"><i class="fas fa-download"></i> 10+</span>
+                                    <span class="stat-item"><i class="fas fa-star"></i> 5.0</span>
+                                    <span class="stat-item"><i class="fas fa-comment"></i> 2 reviews</span>
+                                </div>
+                                <p class="app-description mt-3">Claim territory, outsmart ghosts, and reveal stunning world landmarks in Ghost Trap – a tactical arcade puzzle game that challenges your spatial strategy and quick thinking. Navigate Champ across the grid, carving paths to claim territory while avoiding bouncing ghosts. Claim 80%+ of each level to reveal breathtaking images of famous landmarks from around the world.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="https://play.google.com/store/apps/details?id=in.sudogrep.ghosttrap" target="_blank" rel="noopener noreferrer" class="btn btn-success">
+                                    <i class="fab fa-google-play"></i> Get it on Google Play
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal 2: File Forge -->
+                <div class="modal fade" id="appModal2" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/images/apps/fileforge-icon.png" alt="File Forge" class="app-modal-icon me-3">
+                                    <div>
+                                        <h5 class="modal-title">File Forge: Convert & Extract</h5>
+                                        <p class="modal-subtitle mb-0">Tools</p>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="screenshots-carousel">
+                                    <div class="screenshots-wrapper">
+                                        <img src="assets/images/apps/fileforge-1.png" alt="Screenshot 1">
+                                        <img src="assets/images/apps/fileforge-2.png" alt="Screenshot 2">
+                                        <img src="assets/images/apps/fileforge-3.png" alt="Screenshot 3">
+                                        <img src="assets/images/apps/fileforge-4.png" alt="Screenshot 4">
+                                        <img src="assets/images/apps/fileforge-5.png" alt="Screenshot 5">
+                                        <img src="assets/images/apps/fileforge-6.png" alt="Screenshot 6">
+                                        <img src="assets/images/apps/fileforge-7.png" alt="Screenshot 7">
+                                        <img src="assets/images/apps/fileforge-8.png" alt="Screenshot 8">
+                                        <img src="assets/images/apps/fileforge-9.png" alt="Screenshot 9">
+                                        <img src="assets/images/apps/fileforge-10.png" alt="Screenshot 10">
+                                    </div>
+                                </div>
+                                <div class="app-stats mt-3">
+                                    <span class="stat-item"><i class="fas fa-download"></i> 100+</span>
+                                    <span class="stat-item"><i class="fas fa-star"></i> 5.0</span>
+                                    <span class="stat-item"><i class="fas fa-comment"></i> 3 reviews</span>
+                                </div>
+                                <p class="app-description mt-3">Meet File Forge, your ultimate all-in-one utility app for handling files effortlessly! Whether you need to convert formats, compress file sizes, extract important metadata, or perform advanced document and media editing, File Forge is the only tool you need. Features include universal file conversion, compression, image & video editing, PDF utilities, OCR text extraction, translation, metadata viewer & editor, and QR/barcode scanner.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="https://play.google.com/store/apps/details?id=dev.kartikpatel.fileforge" target="_blank" rel="noopener noreferrer" class="btn btn-success">
+                                    <i class="fab fa-google-play"></i> Get it on Google Play
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal 3: VapeQuit -->
+                <div class="modal fade" id="appModal3" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/images/apps/vapequit-icon.png" alt="VapeQuit" class="app-modal-icon me-3" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 56 56%22><rect fill=%22%23E91E63%22 width=%2256%22 height=%2256%22 rx=%2212%22/><text x=%2228%22 y=%2236%22 text-anchor=%22middle%22 fill=%22white%22 font-size=%2220%22 font-weight=%22bold%22>V</text></svg>'">
+                                    <div>
+                                        <h5 class="modal-title">VapeQuit: Quit Vaping & Smoke</h5>
+                                        <p class="modal-subtitle mb-0">Health & Fitness</p>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="screenshots-carousel">
+                                    <div class="screenshots-wrapper">
+                                        <img src="assets/images/apps/vapequit-1.png" alt="Screenshot 1" onerror="this.style.display='none'">
+                                        <img src="assets/images/apps/vapequit-2.png" alt="Screenshot 2" onerror="this.style.display='none'">
+                                        <img src="assets/images/apps/vapequit-3.png" alt="Screenshot 3" onerror="this.style.display='none'">
+                                    </div>
+                                </div>
+                                <div class="app-stats mt-3">
+                                    <span class="stat-item"><i class="fas fa-download"></i> 5+</span>
+                                    <span class="stat-item"><i class="fas fa-star"></i> 5.0</span>
+                                    <span class="stat-item"><i class="fas fa-comment"></i> 1 review</span>
+                                </div>
+                                <p class="app-description mt-3">Take control of your health and break free from vaping and nicotine habits with VapeQuit. Features include real-time clean duration counter, savings & pod counter calculator, 3-minute panic craving buster with guided breathing exercises, medical health recovery milestones, and 100% private offline-first data storage.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="https://play.google.com/store/apps/details?id=com.sudogrep.vapefree.vape_free" target="_blank" rel="noopener noreferrer" class="btn btn-success">
+                                    <i class="fab fa-google-play"></i> Get it on Google Play
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal 4: Aarti Sangrah -->
+                <div class="modal fade" id="appModal4" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/images/apps/aarti-icon.png" alt="Aarti Sangrah" class="app-modal-icon me-3" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 56 56%22><rect fill=%22%23FF9800%22 width=%2256%22 height=%2256%22 rx=%2212%22/><text x=%2228%22 y=%2236%22 text-anchor=%22middle%22 fill=%22white%22 font-size=%2220%22 font-weight=%22bold%22>A</text></svg>'">
+                                    <div>
+                                        <h5 class="modal-title">Aarti Sangrah: Daily Prayers</h5>
+                                        <p class="modal-subtitle mb-0">Lifestyle</p>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="screenshots-carousel">
+                                    <div class="screenshots-wrapper">
+                                        <img src="assets/images/apps/aarti-1.png" alt="Screenshot 1" onerror="this.style.display='none'">
+                                        <img src="assets/images/apps/aarti-2.png" alt="Screenshot 2" onerror="this.style.display='none'">
+                                        <img src="assets/images/apps/aarti-3.png" alt="Screenshot 3" onerror="this.style.display='none'">
+                                        <img src="assets/images/apps/aarti-4.png" alt="Screenshot 3" onerror="this.style.display='none'">
+                                        <img src="assets/images/apps/aarti-5.png" alt="Screenshot 3" onerror="this.style.display='none'">
+                                    </div>
+                                </div>
+                                <div class="app-stats mt-3">
+                                    <span class="stat-item"><i class="fas fa-download"></i> 100+</span>
+                                    <span class="stat-item"><i class="fas fa-star"></i> 4.8</span>
+                                    <span class="stat-item"><i class="fas fa-comment"></i> 12 reviews</span>
+                                </div>
+                                <p class="app-description mt-3">Aarti Sangrah is a comprehensive Hindu devotional app designed to bring over 300 sacred prayers, Aartis, Chalisas, Mantras, and Stotrams directly to your smartphone. Features include festival highlights, custom Pooja playlists, multi-language support (13 Indian languages), categorized by deity & festival, customizable reading experience, audio Aarti support, and offline reading with sync.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="https://play.google.com/store/apps/details?id=com.kp.kartik.aarti" target="_blank" rel="noopener noreferrer" class="btn btn-success">
+                                    <i class="fab fa-google-play"></i> Get it on Google Play
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal 5: CitizenPrep -->
+                <div class="modal fade" id="appModal5" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/images/apps/citizenprep-icon.png" alt="CitizenPrep" class="app-modal-icon me-3" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 56 56%22><rect fill=%22%239C27B0%22 width=%2256%22 height=%2256%22 rx=%2212%22/><text x=%2228%22 y=%2236%22 text-anchor=%22middle%22 fill=%22white%22 font-size=%2220%22 font-weight=%22bold%22>C</text></svg>'">
+                                    <div>
+                                        <h5 class="modal-title">CitizenPrep</h5>
+                                        <p class="modal-subtitle mb-0">Education</p>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="screenshots-carousel">
+                                    <div class="screenshots-wrapper">
+                                        <img src="assets/images/apps/citizenprep-1.png" alt="Screenshot 1" onerror="this.style.display='none'">
+                                        <img src="assets/images/apps/citizenprep-2.png" alt="Screenshot 2" onerror="this.style.display='none'">
+                                        <img src="assets/images/apps/citizenprep-3.png" alt="Screenshot 3" onerror="this.style.display='none'">
+                                    </div>
+                                </div>
+                                <div class="app-stats mt-3">
+                                    <span class="stat-item"><i class="fas fa-download"></i> 0+</span>
+                                    <span class="stat-item"><i class="fas fa-comment"></i> 0 reviews</span>
+                                </div>
+                                <p class="app-description mt-3">Prepare smarter for your U.S. Citizenship Test with CitizenPrep! Practice civics and history test questions covering government structure, rights and responsibilities, American history, and integrated civics. Features include practice at your own pace, progress tracking, instant score calculation, and offline access with guest mode.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="https://play.google.com/store/apps/details?id=com.sudogrep.citizenprep" target="_blank" rel="noopener noreferrer" class="btn btn-success">
+                                    <i class="fab fa-google-play"></i> Get it on Google Play
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal 6: BillBuddy -->
+                <div class="modal fade" id="appModal6" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/images/apps/billbuddy-icon.png" alt="BillBuddy" class="app-modal-icon me-3" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 56 56%22><rect fill=%22%23009688%22 width=%2256%22 height=%2256%22 rx=%2212%22/><text x=%2228%22 y=%2236%22 text-anchor=%22middle%22 fill=%22white%22 font-size=%2220%22 font-weight=%22bold%22>B</text></svg>'">
+                                    <div>
+                                        <h5 class="modal-title">BillBuddy - Bills & Budget</h5>
+                                        <p class="modal-subtitle mb-0">Finance</p>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="screenshots-carousel">
+                                    <div class="screenshots-wrapper">
+                                        <img src="assets/images/apps/billbuddy-1.png" alt="Screenshot 1" onerror="this.style.display='none'">
+                                        <img src="assets/images/apps/billbuddy-2.png" alt="Screenshot 2" onerror="this.style.display='none'">
+                                        <img src="assets/images/apps/billbuddy-3.png" alt="Screenshot 3" onerror="this.style.display='none'">
+                                    </div>
+                                </div>
+                                <div class="app-stats mt-3">
+                                    <span class="stat-item"><i class="fas fa-download"></i> 10+</span>
+                                    <span class="stat-item"><i class="fas fa-star"></i> 5.0</span>
+                                    <span class="stat-item"><i class="fas fa-comment"></i> 2 reviews</span>
+                                </div>
+                                <p class="app-description mt-3">Stay on top of bills, manage your budget, understand your spending, and keep shared money organized — all in one place. Features include bill organization with reminders, calendar view for due dates, monthly budget management, spending insights with charts, recurring payment tracking, split shared expenses, borrow & lend tracking, multi-currency support, and export/import capabilities.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="https://play.google.com/store/apps/details?id=com.billreminder.bill_reminder" target="_blank" rel="noopener noreferrer" class="btn btn-success">
+                                    <i class="fab fa-google-play"></i> Get it on Google Play
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            
+            <!--//primary-->
+            <div class="secondary col-lg-4 col-12">
+
+
+                <!--//Basic info section-->
+                <aside class="info aside section">
+                    <div class="section-inner">
+                        <h2 class="heading ">Basic Information</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Bangalore,
+                                    India</li>
+                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a
+                                        href="mailto:trapti321.tg@gmail.com" target="_blank"
+                                        rel="noopener noreferrer">trapti321.tg@gmail.com</a></li>
+                                <li><i class="fas fa-phone"></i><span class="sr-only">Phone:</span><a
+                                        href="tel:+919399685223" target="_blank"
+                                        rel="noopener noreferrer">+91 93996 85223</a></li>
+                            </ul>
+                        </div>
+                        <!--//content-->
+                    </div>
+                    <!--//section-inner-->
+                </aside>
+                <!--//Basic info section-->
+
+
+
+                <!--//Skill section-->
+                <aside class="skills aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Skills</h2>
+                        <div class="content">
+                            <div class="skillset">
+                                <div class="item">
+                                    <h3 class="level-title">Flutter &amp; Dart<span class="level-label" data-toggle="tooltip"
+                                            data-placement="left" data-animation="true">Expert</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="95%">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <h3 class="level-title">BLoC / Riverpod / GetX<span class="level-label" data-toggle="tooltip"
+                                            data-placement="left" data-animation="true">Expert</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="90%">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <h3 class="level-title">Clean Architecture &amp; SOLID<span class="level-label"
+                                            data-toggle="tooltip" data-placement="left"
+                                            data-animation="true">Expert</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="90%">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <h3 class="level-title">Firebase &amp; Supabase<span class="level-label"
+                                            data-toggle="tooltip" data-placement="left"
+                                            data-animation="true">Expert</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="85%">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <h3 class="level-title">Native Android (Kotlin/Java)<span class="level-label"
+                                            data-toggle="tooltip" data-placement="left"
+                                            data-animation="true">Proficient</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="75%">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <h3 class="level-title">Native iOS (Swift/SwiftUI)<span class="level-label"
+                                            data-toggle="tooltip" data-placement="left"
+                                            data-animation="true">Proficient</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="70%">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <h3 class="level-title">CI/CD &amp; DevOps<span class="level-label"
+                                            data-toggle="tooltip" data-placement="left"
+                                            data-animation="true">Proficient</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="80%">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <h3 class="level-title">REST APIs &amp; WebSockets<span class="level-label"
+                                            data-toggle="tooltip" data-placement="left"
+                                            data-animation="true">Expert</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="85%">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--//content-->
+                    </div>
+                    <!--//section-inner-->
+                </aside>
+                <!--//Skill section-->
+
+
+                <!--//Technologies section-->
+                <aside class="skills aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Technologies</h2>
+                        <div class="content techicons">
+                            <div class="techicon">
+                                <span class="my-text"><a href="https://flutter.dev/" target="_blank"
+                                        rel="noopener noreferrer">Flutter</a></span>
+                            </div>
+
+                            <div class="techicon">
+                                <span class="my-text"><a href="https://dart.dev/" target="_blank"
+                                        rel="noopener noreferrer">Dart</a></span>
+                            </div>
+
+                            <div class="techicon">
+                                <span class="my-text"><a href="https://bloclibrary.dev/" target="_blank"
+                                        rel="noopener noreferrer">BLoC</a></span>
+                            </div>
+
+                            <div class="techicon">
+                                <span class="my-text"><a href="https://riverpod.dev/" target="_blank"
+                                        rel="noopener noreferrer">Riverpod</a></span>
+                            </div>
+
+                            <div class="techicon">
+                                <span class="my-text"><a href="https://firebase.google.com/" target="_blank"
+                                        rel="noopener noreferrer">Firebase</a></span>
+                            </div>
+
+                            <div class="techicon">
+                                <span class="my-text"><a href="https://supabase.com/" target="_blank"
+                                        rel="noopener noreferrer">Supabase</a></span>
+                            </div>
+
+                            <div class="techicon">
+                                <span class="my-text"><a href="https://azure.microsoft.com/en-us/products/devops" target="_blank"
+                                        rel="noopener noreferrer">Azure DevOps</a></span>
+                            </div>
+
+                            <div class="techicon">
+                                <span class="my-text"><a href="https://github.com/features/actions" target="_blank"
+                                        rel="noopener noreferrer">GitHub Actions</a></span>
+                            </div>
+
+                            <div class="techicon">
+                                <span class="my-text"><a href="https://www.docker.com/" target="_blank"
+                                        rel="noopener noreferrer">Docker</a></span>
+                            </div>
+
+                            <div class="techicon">
+                                <span class="my-text"><a href="https://kotlinlang.org/" target="_blank"
+                                        rel="noopener noreferrer">Kotlin</a></span>
+                            </div>
+
+                            <div class="techicon">
+                                <span class="my-text"><a href="https://developer.apple.com/swift/" target="_blank"
+                                        rel="noopener noreferrer">Swift</a></span>
+                            </div>
+
+                            <div class="techicon">
+                                <span class="my-text"><a href="https://www.sqlite.org/" target="_blank"
+                                        rel="noopener noreferrer">SQLite</a></span>
+                            </div>
+
+                            <div class="techicon">
+                                <span class="my-text"><a href="https://pub.dev/packages/hive" target="_blank"
+                                        rel="noopener noreferrer">Hive</a></span>
+                            </div>
+
+                            <div class="techicon">
+                                <span class="my-text"><a href="https://developers.google.com/maps" target="_blank"
+                                        rel="noopener noreferrer">Google Maps</a></span>
+                            </div>
+
+                            <div class="techicon">
+                                <span class="my-text"><a href="https://git-scm.com/" target="_blank"
+                                        rel="noopener noreferrer">Git</a></span>
+                            </div>
+
+                        </div>
+                        <!--//content-->
+                    </div>
+                    <!--//section-inner-->
+                </aside>
+                <!--//Technologies section-->
+
+
+                <!--//Education info section-->
+                <aside class="education aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Education</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> Master of Computer Applications (MCA)
+                                </h3>
+                                <h4 class="university">Dr. APJ Abdul Kalam University, Indore<span class="year"> | CGPA: 9.40 | (Jun 2019 - Mar 2022)</span></h4>
+                            </div>
+                            <!--//item-->
+                            <div class="item">
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> Bachelor of Computer Applications (BCA)
+                                </h3>
+                                <h4 class="university">Amity University, Gwalior<span class="year"> | CGPA: 8.0 | (Aug 2016 - Apr 2019)</span></h4>
+                            </div>
+                            <!--//item-->
+                        </div>
+                        <!--//content-->
+                    </div>
+                    <!--//section-inner-->
+                </aside>
+                <!--//Education info section-->
+
+                <!--//Language section-->
+                <aside class="languages aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Languages</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li class="item">
+                                    <span class="title"><strong>English:</strong></span>
+                                    <span class="level"> Professional Working Proficiency <br class="visible-xs" /><i
+                                            class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+                                            class="fas fa-star"></i> <i class="fas fa-star"></i></span>
+                                </li>
+                                <!--//item-->
+                                <li class="item">
+                                    <span class="title"><strong>Hindi:</strong></span>
+                                    <span class="level">Native Speaker<br class="visible-sm visible-xs" /><i
+                                            class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+                                            class="fas fa-star"></i> <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i> </span>
+                                </li>
+                                <li class="item">
+                                    <span class="title"><strong>French:</strong></span>
+                                    <span class="level">Basic<br class="visible-sm visible-xs" /><i
+                                            class="fas fa-star"></i> <i class="fas fa-star"></i></span>
+                                </li>
+                                <!--//item-->
+                            </ul>
+                        </div>
+                        <!--//content-->
+                    </div>
+                    <!--//section-inner-->
+                </aside>
+                <!--//Language section-->
+
+
+            </div>
+            <!--//secondary-->
+        </div>
+        <!--//row-->
+    </div>
+    <!--//masonry-->
+
+    <!-- ******FOOTER****** -->
+    <!-- <footer class="footer">
+        <div class="container text-center">
+            <small class="copyright">Designed with <i class="fas fa-heart"></i> by <a
+                    href="https://themes.3rdwavemedia.com" target="_blank" rel="noopener noreferrer">Xiaoying Riley</a>
+                for
+                developers</small>
+        </div>
+    </footer> -->
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="assets/plugins/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/popper.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script>
+
+    <!-- github calendar plugin -->
+    <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
+    <!-- github activity plugin -->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/github-activity/github-activity-0.1.5.min.js"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <!-- dark mode -->
+    <script src="assets/plugins/dark-mode-switch/dark-mode-switch.min.js"></script>
+
+    <script>
+        // GitHub Calendar - https://github.com/IonicaBizau/github-calendar
+        new GitHubCalendar("#github-graph", "trapti321", { responsive: true });
+
+        // GitHub Activity - https://github.com/caseyscarborough/github-activity
+        GitHubActivity.feed({
+            username: "trapti321",
+            selector: "#ghfeed",
+            limit: 5
+        });
+    </script>
 </body>
+
 </html>
